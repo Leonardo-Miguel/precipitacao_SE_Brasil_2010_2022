@@ -4,7 +4,7 @@ utilizados os dados pluviométricos dos anos 2010, 2013, 2016, 2019 e 2022. O ob
 é obter um panorama geral do regime de chuvas nos estados de Minas Gerais, São Paulo, Rio de Janeiro 
 e Espírito Santo durante o período.
 
-Informações mais detalhadas sobre o processamento dos dados análise e a produção das análisessão encontradas no
+Informações mais detalhadas sobre o processamento dos dados e a produção das análises são encontradas no
 arquivo 'A_work_steps.txt' e no 'Relatório - Precipitação na região Sudeste nos anos de 2010, 2013, 2016, 2019 e 2022.pdf'.
 
 IMPORTANTE!
