@@ -1,0 +1,39 @@
+DOWNLOAD DOS DADOS (Fontes dos dados no arquivo 'B_data_sources.txt')
+
+- Foram baixados dados de todas as estações automáticas entre 2010 e 2022, de 3 em 3 anos,
+além dos dados contendo informações específicas de cada estação.
+- Como dado complementar foi usado o shapefile dos estados do Brasil
+
+---------------------------------------------------------------------------------------------------
+PRE-PROCESSAMENTO (PYTHON)
+
+- Leitura dos csvs usando pandas, ignorando linhas do metadados
+- Conversão das células que foram lidas como não numéricas para numéricas
+- Substituição dos valores inválidos por NaN
+- Concatenação e padronização das colunas data e hora, convertendo para formato timestamp
+- Definição de colunas que armazenam o ID e o nome da estação, a partir do nome do arquivo
+- Reorganização das colunas de maneira que o ID, o nome da estação e o timestamp apareceçam antes das medidas meteorológicas
+- Concatenação do banco em um csv único, para importação no postgreSQL
+- Organização da tabela contendo informações das estações
+
+--------------------------------------------------------------------------------------------------------------------------
+MONTAGEM DO BANCO DO POSTGRESQL
+
+- Queries de criação do banco e das tabelas de dados e das estações, com as colunas equivalentes às do csv pre-processado
+- Conexão do banco de dados com o qgis
+- Importação do shapefile dos estados para o banco
+- Validação e visualização espacial da região de interesse e da localização das estações
+- Geração de camadas a partir de queries executadas no qgis, utilizando-se as tabelas do banco conectado
+--------------------------------------------------------------------------------------------------------------------------
+PRODUÇÃO DAS VISUALIZAÇÕES
+
+- Produção de dois mapas utilizando o qgis, um da recipitação acumulada e outro da precipitação média, por ano por estação 
+- Produção de dois gráficos de barras utilizando o python, um um da recipitação acumulada e outro da precipitação média, por ano por estado
+
+--------------------------------------------------------------------------------------------------------------------------
+ESCRITA DO RELATÓRIO
+
+- O relatório foi redigido utilizando latex, através do overleaf
+
+
+

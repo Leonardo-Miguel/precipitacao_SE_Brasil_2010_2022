@@ -1,0 +1,12 @@
+Site do INMET (Instituto Nacional de Meteorologia)
+https://portal.inmet.gov.br/
+----------------------------------------------------------------
+Dados históricos - Estações automáticas, por ano
+https://portal.inmet.gov.br/dadoshistoricos
+----------------------------------------------------------------
+Catálogo das estações automáticas
+https://portal.inmet.gov.br/paginas/catalogoaut
+----------------------------------------------------------------
+Bases do IBGE
+https://www.ibge.gov.br/geociencias/downloads-geociencias.html
+
